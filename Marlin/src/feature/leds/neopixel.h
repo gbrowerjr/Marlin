@@ -31,7 +31,7 @@
 
 #include "../../inc/MarlinConfig.h"
 
-#include <Adafruit_NeoPixel.h>
+#include <Adafruit Neopixel.h>
 #include <stdint.h>
 
 // ------------------------

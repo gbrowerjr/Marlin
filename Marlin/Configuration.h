@@ -195,8 +195,8 @@ Board name: FYSETCV1_1A, FYSETCV1_1B, FYSETCV1_2A, FYSETCV1_2B, change_value = S
 /*** *** **** Section 6 - Choose your Extruder type. There should only be one active selection here *** *** ***/
 
 //#define Ender_regular // e-steps: 93. Plastic extruder used stock Ender-3/Pro and CR-10 
-//#define Ender_regular_metal // e-steps: 97.3.  Metal extruder used stock Ender-3/Pro and CR-10 
-#define Ender_metaldualdrive // e-steps: 140. Usually red in color with TWO toothed gears
+#define Ender_regular_metal // e-steps: 97.3.  Metal extruder used stock Ender-3/Pro and CR-10 
+//#define Ender_metaldualdrive // e-steps: 140. Usually red in color with TWO toothed gears
 //#define E3D_hemera_extruder // e-steps: 409. If over extruder please change e steps via GCODE M92XXX where XXX = number of correct steps
 //#define BMG_regular // e-steps: 140. BMG non-geared but dual drive option
 //#define BMG_dualdrive // e-steps: 415. BMG gear-reduction, dual drive with TWO toothed gears. 
@@ -306,7 +306,7 @@ Board name: FYSETCV1_1A, FYSETCV1_1B, FYSETCV1_2A, FYSETCV1_2B, change_value = S
 /*** *** *** Section 14 - Advanced Printer Settings. Change them or you can leave them as default *** *** ***/
 
 //#define INVERT_XYZ // Define this function only if your XYZ is going in the wrong direction!!! This inverts all 3 axis(s) together. Does not work with Custom_Printer. Change settigns in that section!
-#define INVERT_E0_DIR false // This is for your Extruder's direction. Change value to false if you need your extruder motor to rotate the other way
+#define INVERT_E0_DIR true // This is for your Extruder's direction. Change value to false if you need your extruder motor to rotate the other way
 #define THERMAL_PROTECTION_LEVEL 2 // Acceptable values are 1 (default), 2 and 3. If you have false positives, choose 1. If you want more aggressive thermal runaway settings, choose 3.
 #define DEFAULT_ACCELERATION          500    // X, Y, Z and E acceleration for printing moves. Change if you like
 #define DEFAULT_RETRACT_ACCELERATION  500    // E acceleration for retracts. Change if you like
@@ -2633,7 +2633,7 @@ Board name: FYSETCV1_1A, FYSETCV1_1B, FYSETCV1_2A, FYSETCV1_2B, change_value = S
 #endif
 
 // Support for Adafruit Neopixel LED driver
-#define NEOPIXEL_LED
+//#define NEOPIXEL_LED
 #if ENABLED(NEOPIXEL_LED)
   #define NEOPIXEL_TYPE   NEO_GRBW // NEO_GRBW / NEO_GRB - four/three channel driver type (defined in Adafruit_NeoPixel.h)
   #define NEOPIXEL_PIN     PC7       // LED driving pin
